@@ -46,69 +46,87 @@
 
 
     <header id="HOME" style="background-position: 50% -125px;">
-	        <div class="section_overlay">
-	            <nav class="navbar navbar-default navbar-fixed-top">
-	              <div class="container">
-	                <!-- Brand and toggle get grouped for better mobile display -->
-	                <div class="navbar-header">
-	                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	                    <span class="sr-only">Toggle navigation</span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                  </button>
-	                  <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-	                </div>
+		<script>
+			var on = true
+			function onClickMusicSwitch()
+			{
+				var player = document.getElementById("MUSIC_PLAYER");
+				if (on)
+				{
+					document.getElementById("MUSIC_SWITCH").innerHTML = "音乐 <span class=\"glyphicon glyphicon-play\" aria-hidden=\"true\"></span>";
+					player.pause();
+				}
+				else
+				{
+					document.getElementById("MUSIC_SWITCH").innerHTML = "音乐 <span class=\"glyphicon glyphicon-pause\" aria-hidden=\"true\"></span>";
+					player.play();
+				}
+				on = !on;
+			}
+		</script>
+		
+		<div class="section_overlay">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+				</div>
 
-	                <!-- Collect the nav links, forms, and other content for toggling -->
-	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	                  <ul class="nav navbar-nav navbar-right">
-	                    <li><a href="#HOME">主页</a></li>
-	                    <li><a href="#COMTENT">目录</a></li>
-	                    <li><a href="#ABOUT">简介</a></li>
-	                    <li><a href="#ESSAY">随笔</a></li>
-	                    <li><a href="#TECH">技术</a></li>
-						<li><a href="#PHOTO">相册</a></li>
-	                    <li><a href="#CONTACT">联系</a></li>
-	                  </ul>
-	                </div>
-					
-					<!-- /.navbar-collapse -->
-	              </div><!-- /.container -->
-	            </nav> 
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="#HOME">主页</a></li>
+					<li><a href="#COMTENT">目录</a></li>
+					<li><a href="#ABOUT">简介</a></li>
+					<li><a href="#ESSAY">随笔</a></li>
+					<li><a href="#TECH">技术</a></li>
+					<li><a href="#PHOTO">相册</a></li>
+					<li><a href="#CONTACT">联系</a></li>
+					<li><a href="#" onclick="onClickMusicSwitch()" id="MUSIC_SWITCH">音乐 <span class="glyphicon glyphicon-pause" aria-hidden="true"></span> </a></li>
+				  </ul>
+				</div>
+				
+				<!-- /.navbar-collapse -->
+			  </div><!-- /.container -->
+			</nav> 
 
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-md-12 text-center">
-	                        <div class="home_text wow fadeInUp animated">
-	                            <h2>ZD的博客</h2>
-	                            <p>一个真正的旅行家必是一个流浪者，经历着流浪者的快乐、诱惑和探险意志</p>
-	                            <img src="images/shape.png" alt="">                        
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="home_text wow fadeInUp animated">
+							<h2>ZD的博客</h2>
+							<p>一个真正的旅行家必是一个流浪者，经历着流浪者的快乐、诱惑和探险意志</p>
+							<img src="images/shape.png" alt="">                        
+						</div>
+					</div>
+				</div>
+			</div>
 
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-md-12 text-center">
-	                        <div class="scroll_down">
-                            <a href="#COMTENT"><img src="images/scroll.png" alt=""></a>
-	                            <h4>翻滚吧</h4>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>            
-	        </div>  
-	    </section>
+			<div class="container" id="MUSIC">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="scroll_down">
+						<a href="#COMTENT"><img src="images/scroll.png" alt=""></a>
+							<h4>翻滚吧</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div>
-			<audio controls="controls" autoplay="true" loop="true" class="nav navbar-nav navbar-right">
+			<audio controls="controls" autoplay="true" loop="true" class="nav navbar-nav navbar-right" hidden="true" id="MUSIC_PLAYER">
 				<source src="music/1.mp3" type="audio/mpeg">
 				Your browser does not support the audio tag.
 			</audio>
 		</div>
     </header>
-
 
     <section class="services" id="COMTENT">
         <div class="container">
