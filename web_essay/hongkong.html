@@ -37,7 +37,7 @@
 	<![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy">
 	<!-- Preloader -->
 	<div id="preloader">
 		<div id="status">&nbsp;</div>
@@ -102,17 +102,17 @@
 		</div>
     </header>
 	
-	<section class="essay_area text-center wow fadeInUp animated" id="ESSAY">
+	<section class="essay_area text-center wow fadeInUp animated col-md-8 col-xs-12" id="ESSAY">
 		<div class="container">
             <div class="row">
-                <div class="col-md-12 col-xs-12 text-center">
+                <div class="text-center">
 					<div class="col-md-8 col-xs-12">
 						<div class="about_title">
 							<h2>- 港岛记 -</h2>
 							<img src="../images/shape.png" alt="">
 						</div>
 						<div class="text-left">
-							<p>&emsp;&emsp;2017年，随项目入驻深圳，海关的那边就是香港。虽然是一个国家，却要先办了签证才能过海关。五一趁劳动节放假，背上行囊，来一个香港三日游。我是从深圳的福田口岸过的海关，这里去香港可以坐港铁直达九龙、香港岛，需要大概40分钟的车程。第一件要做的事不是别的，正是兑换港币。到了地铁站，会有很多兑换点，可以说还是挺方便的。香港消费水平是高于内地一线城市的，所以可以适当多带一点。当然如果不想随身多带现金，到了香港就算使用银联卡也能很方便的从取款机取到钱，而且满大街都是做兑换生意的，只是可能会略贵一点。当然如果有需要也可以在地铁站买八通卡，充值的八通卡几乎可以代替现金。</p>
+							<p id="section-1">&emsp;&emsp;2017年，随项目入驻深圳，海关的那边就是香港。虽然是一个国家，却要先办了签证才能过海关。五一趁劳动节放假，背上行囊，来一个香港三日游。我是从深圳的福田口岸过的海关，这里去香港可以坐港铁直达九龙、香港岛，需要大概40分钟的车程。第一件要做的事不是别的，正是兑换港币。到了地铁站，会有很多兑换点，可以说还是挺方便的。香港消费水平是高于内地一线城市的，所以可以适当多带一点。当然如果不想随身多带现金，到了香港就算使用银联卡也能很方便的从取款机取到钱，而且满大街都是做兑换生意的，只是可能会略贵一点。当然如果有需要也可以在地铁站买八通卡，充值的八通卡几乎可以代替现金。</p>
 						</div>
 						<div style="margin-bottom: 40px; margin-top: 40px;">
 							<a href="../images/album_hongkong/IMG_20170429_091857.jpg" class="image-popup" title="通行证">
@@ -120,7 +120,7 @@
 							</a>
 						</div>
 						<div class="text-left">
-							<p>&emsp;&emsp;港币（HKD）是香港的通用货币，在香港一般不直接使用人民币。港币纸币面值有十元、二十元、五十元、一百元、五百元、和一千元，一港元大概等于八九毛人民币吧（2017年）。看着商品标价都是一个个的$符号，但是买起东西来完全不手软，毕竟虽然都是刀，但是跟美刀确实相去甚远。其中，不得不说面值十元的港币确实漂亮，难怪被《金钱的艺术》一书的作者评为世界十大最漂亮纸币之一，不常使用港币的话，存一张以作收藏也是很不错的。</p>
+							<p id="section-2">&emsp;&emsp;港币（HKD）是香港的通用货币，在香港一般不直接使用人民币。港币纸币面值有十元、二十元、五十元、一百元、五百元、和一千元，一港元大概等于八九毛人民币吧（2017年）。看着商品标价都是一个个的$符号，但是买起东西来完全不手软，毕竟虽然都是刀，但是跟美刀确实相去甚远。其中，不得不说面值十元的港币确实漂亮，难怪被《金钱的艺术》一书的作者评为世界十大最漂亮纸币之一，不常使用港币的话，存一张以作收藏也是很不错的。</p>
 						</div>
 						<div style="margin-bottom: 40px; margin-top: 40px;">
 							<a href="../images/album_hongkong/IMG_20170429_092057.jpg" class="image-popup" title="港币">
@@ -130,9 +130,23 @@
 						</div>
 					</div>
                 </div>
-            </div>    
-        </div>
+            </div>
     </section>
+	<div class="col-md-4 col-xs-12 hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div id="myScrollspy">
+					<ul class="nav nav-tabs nav-stacked" width="100%" data-spy="affix" data-offset-top="620">
+						<li class="active"><a href="#section-1">第一部分</a></li>
+						<li><a href="#section-2">第二部分</a></li>
+						<li><a href="#section-3">第三部分</a></li>
+						<li><a href="#section-4">第四部分</a></li>
+						<li><a href="#section-5">第五部分</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<section class="article text-center wow fadeInUp animated" id="ESSAY">
 		<div class="container">
@@ -226,15 +240,6 @@
         </div>
     </div>
 </footer>
-
-
-
-
-
-
-
-
-
 
 
 <!-- =========================
