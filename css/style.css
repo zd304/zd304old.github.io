@@ -155,6 +155,13 @@ letter-spacing: 1px;
 padding-top: 110px;
 
 }
+.single_testimonial h3{
+	color: #404040;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px
+}
 .single_testimonial h4{
 	color: #404040;
 	font-size: 14px;
@@ -163,7 +170,36 @@ padding-top: 110px;
 	letter-spacing: 1px
 }
 
-
+.article p{
+color: #404040;
+font-size: 18px;
+font-family: 'Dosis', sans-serif;
+letter-spacing: 1px;
+padding-top: 80px;
+border-bottom: 1px solid #ddd;
+padding-bottom: 40px;
+}
+.article h3{
+	color: #404040;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.article h4{
+	color: #404040;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px
+}
+.article.a{
+	font-size: 14px;
+	color: #636363;
+	text-transform: uppercase;
+}
 
 /*Fun Facts*/
 .fun_facts{
@@ -332,6 +368,11 @@ text-transform: uppercase;
 .essay_area .container{
 	padding-bottom: 60px;
 	border-bottom: 1px solid #ddd;
+}
+.essay_area .a{
+	font-size: 14px;
+	color: #636363;
+	text-transform: uppercase;
 }
 
 /*Contact*/

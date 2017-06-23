@@ -46,25 +46,6 @@
 
 
     <header id="HOME" style="background-position: 50% -125px;">
-		<script>
-			var on = true
-			function onClickMusicSwitch()
-			{
-				var player = document.getElementById("MUSIC_PLAYER");
-				if (on)
-				{
-					document.getElementById("MUSIC_SWITCH").innerHTML = "音乐 <span class=\"glyphicon glyphicon-play\" aria-hidden=\"true\"></span>";
-					player.pause();
-				}
-				else
-				{
-					document.getElementById("MUSIC_SWITCH").innerHTML = "音乐 <span class=\"glyphicon glyphicon-pause\" aria-hidden=\"true\"></span>";
-					player.play();
-				}
-				on = !on;
-			}
-		</script>
-		
 		<div class="section_overlay">
 			<nav class="navbar navbar-default navbar-fixed-top">
 			  <div class="container">
@@ -89,7 +70,7 @@
 					<li><a href="#TECH">技术</a></li>
 					<li><a href="#PHOTO">相册</a></li>
 					<li><a href="#CONTACT">联系</a></li>
-					<li><a href="#" onclick="onClickMusicSwitch()" id="MUSIC_SWITCH">音乐 <span class="glyphicon glyphicon-pause" aria-hidden="true"></span> </a></li>
+					<li><a href="#" onclick="onClickMusicSwitch()" id="MUSIC_SWITCH">音乐 <span class="glyphicon glyphicon-play" aria-hidden="true"></span> </a></li>
 				  </ul>
 				</div>
 				
@@ -121,7 +102,7 @@
 			</div>
 		</div>
 		<div class="hidden-xs">
-			<audio controls autoplay loop class="nav navbar-nav navbar-right" hidden="true" id="MUSIC_PLAYER">
+			<audio controls="controls" loop="true" class="nav navbar-nav navbar-right" hidden="true" id="MUSIC_PLAYER">
 				<source src="music/1.mp3" type="audio/mpeg">
 				Your browser does not support the audio tag.
 			</audio>
@@ -236,17 +217,18 @@
                     <div class="about_title">
                         <h2>随笔</h2>
                         <img src="images/shape.png" alt="">
+						<p class="text-right"><a href="essays.html"><span class="glyphicon glyphicon-th" aria-hidden="true"></span>&emsp;查看全部</a></p>
                     </div>
                 </div>
             </div>
-			<div class="owl-carousel">
-                <div class="single_testimonial text-center wow fadeInUp animated">
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores<br/> eos qui ratione voluptatem sequi nesciunt.</p>
-                    <h4>-JOHN DOE</h4>
+			<div class="owl-carousel wow fadeInUp animated">
+                <div class="single_testimonial text-center">
+					<a href="#"><h3>- 港岛记 -</h3></a>
+                    <p>2017年，随项目入驻深圳，海关的那边就是香港。虽然是一个国家，却要先办了签证才能过海关。五一趁劳动节放假，背上行囊，来一个香港三日游。我是从深圳的福田口岸过的海关，这里去香港<a href="#">……</a></p>
                 </div>
                 <div class="single_testimonial text-center">
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius<br/> modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    <h4>-JOHN SMITH</h4>
+					<h3>- 暂无 -</h3>
+                    <p>敬请期待……</p>
                 </div>
             </div>      
         </div>
