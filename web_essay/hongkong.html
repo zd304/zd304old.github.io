@@ -42,6 +42,14 @@
 	<div id="preloader">
 		<div id="status">&nbsp;</div>
 	</div>
+	
+	<script>
+		window.onload=function()
+		{
+			on = true;
+			document.getElementById("MUSIC_SWITCH").innerHTML = "音乐 <span class=\"glyphicon glyphicon-pause\" aria-hidden=\"true\"></span>";
+		}
+	</script>
 
     <header id="HOME" style="background-position: 50% -125px;">
 		<div class="section_overlay">
@@ -95,8 +103,8 @@
 			</div>
 		</div>
 		<div class="hidden-xs">
-			<audio controls loop class="nav navbar-nav navbar-right" hidden="true" id="MUSIC_PLAYER">
-				<source src="../music/1.mp3" type="audio/mpeg">
+			<audio controls autoplay loop class="nav navbar-nav navbar-right" hidden="true" id="MUSIC_PLAYER">
+				<source src="../music/一生所爱.mp3" type="audio/mpeg">
 				Your browser does not support the audio tag.
 			</audio>
 		</div>
