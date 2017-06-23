@@ -486,9 +486,10 @@ text-transform: uppercase;
 margin-bottom: 0px;
 letter-spacing: 0px;
 }
-.copyright_text a{
-	color:#f73b56;
-	text-transform:uppercase;
-	font-weight:700;
-	text-decoration:none;
-	}
+.plate{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 15px;
+	border-color: #f74d65;
+}
