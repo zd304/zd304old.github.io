@@ -62,29 +62,14 @@
 	
 	<section class="text-center wow fadeInUp animated">
 		<h1>海南</h1>
-		<div class="ma5-gallery">
-			<figure class="gallery-item">
-				<img src="../../images/img_hainan.jpg" alt="">
+		<div class="ma5-gallery" id="PHOTO_FRAME">
+			<!--figure class="gallery-item">
+				<img src="../../images/album/hainan/IMG_0001.jpg" alt="">
 				<figcaption>海南</figcaption>
-			</figure>
+			</figure-->
 		</div>
+		<button id="LOADIMG" type="button" class="btn btn-primary show-pic-btn" onclick="LoadImageHainan()"><h3>显示更多<h3></button>
 	</section>
-	
-	<div class="essay_area text-center wow fadeInUp animated" id="ESSAY">
-		<div class="container">
-            <div class="row">
-				<!--div class="col-md-4 col-xs-12 hidden-xs">
-					<div id="myScrollspy" style="margin-left: 40px;">
-						<ul class="nav nav-tabs nav-stacked" width="100%" data-spy="affix" data-offset-top="620">
-							<li class="active"><a href="#section-1">>&emsp;DAY&nbsp;1&emsp;<</a></li>
-							<li><a href="#section-2">>&emsp;DAY&nbsp;2&emsp;<</a></li>
-							<li><a href="#section-3">>&emsp;DAY&nbsp;3&emsp;<</a></li>
-						</ul>
-					</div>
-				</div-->
-            </div>
-		</div>
-    </div>
     
 	<script>
 		SetBottom("../..");
@@ -100,6 +85,10 @@
     <script src="../../js/owl.carousel.js"></script>
     <script src="../../js/wow.js"></script>
 	<script src="../../js/script.js"></script>
+	<script src="../../js/album.js"></script>
+	<script>
+	InitAlbum();
+	</script>
 	
 	<!-- Magnific Popup -->
 	<script src="../../js/jquery.magnific-popup.min.js"></script>

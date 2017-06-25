@@ -365,6 +365,33 @@ text-transform: uppercase;
 	border-bottom: 1px solid #ddd;
 }
 
+.show-pic-btn, .show-pic-btn:active, .show-pic-btn:visited, .show-pic-btn:focus{
+	color: #888;
+	background-color: #fff;
+	border-radius: 0px;
+	outline: none;
+	padding: 10px 40px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: all 1s;
+}
+.show-pic-btn:hover{
+	/*background: #f74d65;*/
+	border-color: #f74d65;
+	background-color: #fff;
+	border-radius: 0px;
+	border-bottom: 30px solid #f74d65;
+	outline: none;
+	color: #f74d65;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: all 1s;
+}
+.call_to_action .container{
+	padding-bottom: 60px;
+	border-bottom: 1px solid #ddd;
+}
+
 .essay_area .container{
 	padding-bottom: 60px;
 	border-bottom: 1px solid #ddd;
