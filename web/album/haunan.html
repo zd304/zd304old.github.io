@@ -47,10 +47,14 @@
 	<script src="../../js/code_reuse.js"></script>
 	
     <script>
-		SetTop("../..", "ESSAY");
+		SetTop("../..", "PHOTO", function(txt) {
+			var localTxt = txt.replace("glyphicon glyphicon-play", "glyphicon glyphicon-pause");
+			SetMusicOn(true);
+			return localTxt;
+		});
 	</script>
 	<div class="hidden-xs">
-		<audio controls loop class="nav navbar-nav navbar-right" hidden="true" id="MUSIC_PLAYER">
+		<audio controls autoplay loop class="nav navbar-nav navbar-right" hidden="true" id="MUSIC_PLAYER">
 			<source src="../../music/羽·泉 - 解放.mp3" type="audio/mpeg">
 			Your browser does not support the audio tag.
 		</audio>
@@ -59,7 +63,7 @@
 	<section class="essay_area text-center wow fadeInUp animated">
 		<div class="container">
 			<div class="row">
-				<div class="about_title">
+				<div class="about_title" id="PHOTO">
 					<h2>- 海南 -</h2>
 					<img src="../../images/shape.png" alt="">
 				</div>

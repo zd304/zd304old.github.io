@@ -23,6 +23,15 @@ function SetTop(rootPath, type, fn)
 			<li><a href="#" onclick="onClickMusicSwitch()" id="MUSIC_SWITCH">音乐 <span class="glyphicon glyphicon-play" aria-hidden="true"></span> </a></li>\n\
 		';
 	}
+	else if (type == "PHOTO")
+	{
+		top2 = '\
+			<li><a href="ROOT/index.html">主页</a></li>\n\
+			<li><a href="#PHOTO">相册</a></li>\n\
+			<li><a href="#CONTACT">留言</a></li>\n\
+			<li><a href="#" onclick="onClickMusicSwitch()" id="MUSIC_SWITCH">音乐 <span class="glyphicon glyphicon-play" aria-hidden="true"></span> </a></li>\n\
+		';
+	}
 	
 	var xmlHttp = null;
 	if (window.XMLHttpRequest)
