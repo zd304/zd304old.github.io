@@ -25,11 +25,10 @@
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <!-- Style -->
     <link href="../../css/style.css" rel="stylesheet">
-	
+	<!-- MA5-Gallery -->
+	<link href="../../css/MA5-Gallery/ma5gallery.css" rel="stylesheet" type="text/css">
     <!-- Responsive CSS -->
     <link href="../../css/responsive.css" rel="stylesheet">
-	<!-- JQueryView -->
-	<link href="../../css/jQueryViewer/viewer.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -61,17 +60,19 @@
 		</audio>
 	</div>
 	
+	<section class="text-center wow fadeInUp animated">
+		<h1>海南</h1>
+		<div class="ma5-gallery">
+			<figure class="gallery-item">
+				<img src="../../images/img_hainan.jpg" alt="">
+				<figcaption>海南</figcaption>
+			</figure>
+		</div>
+	</section>
+	
 	<div class="essay_area text-center wow fadeInUp animated" id="ESSAY">
 		<div class="container">
             <div class="row">
-				<ul id="jq22" style="margin-top: 40px;">
-					<div class="col-md-6 no_padding">
-						<img style="width: 100%" onclick="onClickPicture()" data-original="../../images/img_hainan.jpg" src="../../images/img_hainan.jpg" alt="哈哈哈哈">
-					</div>
-					<div class="col-md-6 no_padding">
-						<img style="width: 100%" onclick="onClickPicture()" data-original="../../images/img_hongkong.jpg" src="../../images/img_hongkong.jpg" alt="图片2">
-					</div>
-				</ul>
 				<!--div class="col-md-4 col-xs-12 hidden-xs">
 					<div id="myScrollspy" style="margin-left: 40px;">
 						<ul class="nav nav-tabs nav-stacked" width="100%" data-spy="affix" data-offset-top="620">
@@ -103,15 +104,9 @@
 	<!-- Magnific Popup -->
 	<script src="../../js/jquery.magnific-popup.min.js"></script>
 	<script src="../../js/magnific-popup-options.js"></script>
-	<script src="../../js/jQueryViewer/viewer.min.js"></script>
-	<script>
-	var viewer = new Viewer(document.getElementById('jq22'), {
-		url: 'data-original'
-	});
-	SetOnExit(function(){
-		document.getElementById("NAVBAR").style.visibility = "visible"
-	})
-	</script>
+	<!-- MA5-Gallery -->
+	<script src="../../js/MA5-Gallery/ma5gallery.js"></script>
+	<script src="../../js/MA5-Gallery/functions.js"></script>
 </body>
 
 </html>
