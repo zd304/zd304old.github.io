@@ -62,19 +62,25 @@ $(window).load(function() { // makes sure the whole site is loaded
 })
 //]]>
 
-var on = false
 function onClickMusicSwitch()
 {
 	var player = document.getElementById("MUSIC_PLAYER");
-	if (on)
+	try
 	{
-		document.getElementById("MUSIC_SWITCH").innerHTML = "音乐 <span class=\"glyphicon glyphicon-play\" aria-hidden=\"true\"></span>";
-		player.pause();
+		if (on)
+		{
+			document.getElementById("MUSIC_SWITCH").innerHTML = "音乐 <span class=\"glyphicon glyphicon-play\" aria-hidden=\"true\"></span>";
+			player.pause();
+		}
+		else
+		{
+			document.getElementById("MUSIC_SWITCH").innerHTML = "音乐 <span class=\"glyphicon glyphicon-pause\" aria-hidden=\"true\"></span>";
+			player.play();
+		}
 	}
-	else
+	catch (e)
 	{
-		document.getElementById("MUSIC_SWITCH").innerHTML = "音乐 <span class=\"glyphicon glyphicon-pause\" aria-hidden=\"true\"></span>";
-		player.play();
+		alert(e.message);
 	}
 	on = !on;
 }
