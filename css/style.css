@@ -374,6 +374,7 @@ text-transform: uppercase;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	transition: all 1s;
+	margin-top: 50px;
 }
 .show-pic-btn:hover{
 	/*background: #f74d65;*/
@@ -386,6 +387,7 @@ text-transform: uppercase;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	transition: all 1s;
+	margin-top: 50px;
 }
 .call_to_action .container{
 	padding-bottom: 60px;

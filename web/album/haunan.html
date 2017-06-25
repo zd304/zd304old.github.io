@@ -47,26 +47,29 @@
 	<script src="../../js/code_reuse.js"></script>
 	
     <script>
-		SetTop("../..", "ESSAY", function(txt) {
-			var localTxt = txt.replace("glyphicon glyphicon-play", "glyphicon glyphicon-pause");
-			SetMusicOn(false);
-			return localTxt;
-		});
+		SetTop("../..", "ESSAY");
 	</script>
 	<div class="hidden-xs">
 		<audio controls loop class="nav navbar-nav navbar-right" hidden="true" id="MUSIC_PLAYER">
-			<source src="../../music/一生所爱.mp3" type="audio/mpeg">
+			<source src="../../music/羽·泉 - 解放.mp3" type="audio/mpeg">
 			Your browser does not support the audio tag.
 		</audio>
 	</div>
 	
-	<section class="text-center wow fadeInUp animated">
-		<h1>海南</h1>
-		<div class="ma5-gallery" id="PHOTO_FRAME">
-			<!--figure class="gallery-item">
-				<img src="../../images/album/hainan/IMG_0001.jpg" alt="">
-				<figcaption>海南</figcaption>
-			</figure-->
+	<section class="essay_area text-center wow fadeInUp animated">
+		<div class="container">
+			<div class="row">
+				<div class="about_title">
+					<h2>- 海南 -</h2>
+					<img src="../../images/shape.png" alt="">
+				</div>
+				<div class="ma5-gallery col-md-12 col-xs-12" id="PHOTO_FRAME">
+					<!--figure class="gallery-item">
+						<img src="../../images/album/hainan/IMG_0001.jpg" alt="">
+						<figcaption>海南</figcaption>
+					</figure-->
+				</div>
+			</div>
 		</div>
 		<button id="LOADIMG" type="button" class="btn btn-primary show-pic-btn" onclick="LoadImageHainan()"><h3>显示更多<h3></button>
 	</section>
