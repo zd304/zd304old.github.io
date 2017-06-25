@@ -385,6 +385,21 @@
             </div>           
         </div>
     </section>
+	
+	<section class="text-center wow fadeInUp animated" id="TECH">
+		<div class="container">
+            <div class="row">
+				<div id="cloud-tie-wrapper" class="cloud-tie-wrapper">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<a class="cloud-tie-join-count" href="javascript:void(0);">
+	  <span class="icon-comment"></span>
+	  <span class="join-count">0</span>
+	  <span class="join-text">人参与</span>
+	</a>
     
     <script>
 		SetBottom(".");
@@ -406,6 +421,18 @@
 	var viewer = new Viewer(document.getElementById('jq22'), {
 		url: 'data-original'
 	});
+	</script>
+	<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+	<script>
+		var cloudTieConfig =
+		{
+		  url: document.location.href, 
+		  sourceId: "",
+		  productKey: "06ed018792cc445cae5084e8fb7c09aa",
+		  target: "cloud-tie-wrapper"
+		};
+		var yunManualLoad = true;
+		Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
 	</script>
 </body>
 
