@@ -10,7 +10,7 @@ function SetTop(rootPath, type, fn)
 			<li><a href="#ESSAY">随笔</a></li>\n\
 			<li><a href="#TECH">技术</a></li>\n\
 			<li><a href="#PHOTO">相册</a></li>\n\
-			<li><a href="#CONTACT">联系</a></li>\n\
+			<li><a href="#CONTACT">留言</a></li>\n\
 			<li><a href="#" onclick="onClickMusicSwitch()" id="MUSIC_SWITCH">音乐 <span class="glyphicon glyphicon-play" aria-hidden="true"></span> </a></li>\
 		';
 	}
@@ -19,7 +19,7 @@ function SetTop(rootPath, type, fn)
 		top2 = '\
 			<li><a href="ROOT/index.html">主页</a></li>\n\
 			<li><a href="#ESSAY">随笔</a></li>\n\
-			<li><a href="#CONTACT">联系</a></li>\n\
+			<li><a href="#CONTACT">留言</a></li>\n\
 			<li><a href="#" onclick="onClickMusicSwitch()" id="MUSIC_SWITCH">音乐 <span class="glyphicon glyphicon-play" aria-hidden="true"></span> </a></li>\n\
 		';
 	}
