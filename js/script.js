@@ -85,4 +85,7 @@ function onClickMusicSwitch()
 	on = !on;
 }
 
-
+function onClickPicture()
+{
+	document.getElementById("NAVBAR").style.visibility = "hidden"
+}

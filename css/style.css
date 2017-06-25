@@ -527,3 +527,8 @@ ul.nav-tabs li:last-child a{
 ul.nav-tabs.affix{
 	top: 30px; /* Set the top position of pinned element */
 }
+
+/* { margin: 0; padding: 0;}
+#jq22 { width: 700px; margin: 0 auto; font-size: 0;}
+#jq22 li { display: inline-block; width: 32%; margin-left: 1%; padding-top: 1%;}
+#jq22 li img { width: 100%;}*/
