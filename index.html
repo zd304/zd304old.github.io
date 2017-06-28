@@ -398,8 +398,20 @@
     <script>
 		SetBottom(".");
 	</script>
-
-
+	<!-- DOM元素 -->
+	<!-- 根据站点情况，配置data-url或data-sourceId中的一个即可 -->
+	<span 
+		lang="join-count" 
+		class="join-count" 
+		data-url="" 
+		data-sourceId=""
+		id="TALK_LIST"
+	>0</span>
+	<script>
+		var span = document.getElementById("TALK_LIST");
+		span.setAttribute("data-url", document.location.href);
+		span.setAttribute("data-sourceId", document.location.href);
+	</script>
 <!-- =========================
      SCRIPTS 
 ============================== -->
@@ -418,6 +430,7 @@
 	</script>
 	
 	<!-- 网易云跟帖 -->
+	<script>var yunModuleEnv = true;</script>
 	<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 	<script>
 		var cloudTieConfig = {
@@ -428,6 +441,9 @@
 		};
 		var yunManualLoad = true;
 		Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+		// JavaScript 配置
+		var yunTieProductKey = "06ed018792cc445cae5084e8fb7c09aa";
+		Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vZXh0ZW5kL2xpc3Rfam9pbl9zY3JpcHQuaHRtbA==", true);
 	</script>
 </body>
 
