@@ -40,6 +40,10 @@ namespace FormUtility
 
 	bool FormCheckBox(const char* label, bool* check);
 
+	bool FormInputText(const char* label, char* buf, size_t size);
+
+	void FormTextMultiline(const char* label, char* buf, size_t bufSize, ImVec2 size = ImVec2(0.0f, 0.0f));
+
 	void FormEnd();
 };
 

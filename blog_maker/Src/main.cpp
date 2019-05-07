@@ -38,6 +38,23 @@ LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
         if ((wParam & 0xfff0) == SC_KEYMENU) // Disable ALT application menu
             return 0;
         break;
+	case WM_IME_CHAR:
+	{
+		// input text 支持中文;
+		char cc[4];
+		memset(cc, 0, 4);
+		memcpy(cc, &wParam, sizeof(unsigned int));
+		char temp = cc[0];
+		cc[0] = cc[1];
+		cc[1] = temp;
+
+		std::string s = STU(cc);
+
+		ImGuiIO& io = ImGui::GetIO();
+		io.AddInputCharactersUTF8(s.c_str());
+		return 0;
+	}
+	break;
     case WM_DESTROY:
         PostQuitMessage(0);
         return 0;
@@ -50,7 +67,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     // Create application window
     WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, _T("ImGui Example"), NULL };
     RegisterClassEx(&wc);
-    HWND hwnd = CreateWindow(_T("ImGui Example"), _T("DTool"), WS_OVERLAPPEDWINDOW, 100, 100, 1280, 800, NULL, NULL, wc.hInstance, NULL);
+	window_width = 480.0f;
+	window_height = 900.0f;
+    HWND hwnd = CreateWindowA(_T("ImGui Example"), _T("DTool"), WS_OVERLAPPEDWINDOW, 100, 100, (int)window_width, (int)window_height, NULL, NULL, wc.hInstance, NULL);
 
     // Initialize Direct3D
     LPDIRECT3D9 pD3D;

@@ -3,6 +3,8 @@
 
 #include "inc.h"
 
+struct BlogModel;
+
 class EditorMain
 {
 public:
@@ -13,6 +15,7 @@ public:
 public:
 	LPDIRECT3DDEVICE9 mDevice;
 	HWND mHwnd;
+	BlogModel* mBlogModel;
 };
 
 #endif

@@ -134,6 +134,7 @@
     <ClCompile Include="Src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Src\BlogModel.h" />
     <ClInclude Include="Src\cJSON.h" />
     <ClInclude Include="Src\EditorMain.h" />
     <ClInclude Include="Src\imconfig.h" />

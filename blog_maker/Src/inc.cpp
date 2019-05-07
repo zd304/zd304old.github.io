@@ -167,6 +167,36 @@ namespace FormUtility
 		return rst;
 	}
 
+	void FormTextMultiline(const char* label, char* buf, size_t bufSize, ImVec2 size)
+	{
+		ImGui::Text(label);
+		ImGui::NextColumn();
+
+		char c[128];
+		memset(c, 0, 128);
+		sprintf_s(c, "#FMULTITXT%s", label);
+
+		ImGui::PushID(c);
+		ImGui::InputTextMultiline("", buf, bufSize, size);
+		ImGui::PopID();
+		ImGui::NextColumn();
+	}
+
+	bool FormInputText(const char* label, char* buf, size_t size)
+	{
+		ImGui::Text(label);
+		ImGui::NextColumn();
+
+		char c[128];
+		memset(c, 0, 128);
+		sprintf_s(c, "#FCB%s", label);
+		ImGui::PushID(c);
+		bool rst = ImGui::InputText("", buf, size);
+		ImGui::PopID();
+		ImGui::NextColumn();
+		return rst;
+	}
+
 	void FormEnd()
 	{
 		ImGui::Columns();
