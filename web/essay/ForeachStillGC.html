@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>张东的博客-随笔-foreach循环还会产生GC吗？（翻译）</title>
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <!-- Preloader -->
+    <link rel="stylesheet" href="../../css/preloader.css" type="text/css" media="screen, print"/>
+
+    <!-- Icon Font-->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../css/owl.carousel.css--">
+    <link rel="stylesheet" href="../../css/owl.theme.default.css">
+	<link rel="stylesheet" href="../../css/magnific-popup.css">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="../../css/animate.css">
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="../../css/style.css" rel="stylesheet">
+	
+    <!-- Responsive CSS -->
+    <link href="../../css/responsive.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/lte-ie7.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+	<!-- Preloader -->
+	<!--div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div-->
+	
+	<script src="../../js/code_reuse.js"></script>
+	
+    <script>
+		SetTop("../..", "ESSAY", function(txt) {
+			var localTxt = txt.replace("glyphicon glyphicon-play", "glyphicon glyphicon-pause");
+			SetMusicOn(true);
+			return localTxt;
+		});
+	</script>
+	<div class="hidden-xs">
+		<audio controls autoplay loop class="nav navbar-nav navbar-right" hidden="true" id="MUSIC_PLAYER">
+			<source src="../../music/一生所爱.mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+		</audio>
+	</div>
+	
+	<div class="essay_area text-center wow fadeInUp animated" id="ESSAY">
+		<div class="container">
+            <div class="row">
+				<div class="col-md-8 col-xs-12">
+					<div class="about_title">
+						<h2>- foreach循环还会产生GC吗？（翻译） -</h2>
+						<img src="../../images/shape.png" alt=""/>
+					</div>
+					
+					<div class="text-left">
+						<p>&emsp;&emsp;从Unity发布新版本5.6以来，使用foreach安全了吗？</p>
+					</div>
+					<div class="text-left">
+						<p>&emsp;&emsp;今天的文章是简单的测试，用的Unity5.6.0f3。</p>
+					</div>
+					<div class="text-center" style="margin-bottom: 80px;">
+						<h3 id="section-1">>&emsp;引用&emsp;<</h3>
+					</div>
+					<div class="text-left">
+						<p>&emsp;&emsp;引用：https://jacksondunstan.com/articles/3805</p>
+					</div>
+					<div class="text-left">
+						<p>&emsp;&emsp;未完待续……</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 hidden-xs">
+					<div id="myScrollspy" style="margin-left: 40px;">
+						<ul class="nav nav-tabs nav-stacked" width="100%" data-spy="affix" data-offset-top="620">
+							<li class="active"><a href="#section-1">>&emsp;引用&emsp;<</a></li>
+						</ul>
+					</div>
+				</div>
+            </div>
+		</div>
+    </div>
+    
+	<script>
+		SetBottom("../..");
+	</script>
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+	<script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.nicescroll.js"></script>
+    <script src="../../js/owl.carousel.js"></script>
+    <script src="../../js/wow.js"></script>
+	<script src="../../js/script.js"></script>
+	
+	<!-- Magnific Popup -->
+	<script src="../../js/jquery.magnific-popup.min.js"></script>
+	<script src="../../js/magnific-popup-options.js"></script>
+	
+	<!-- 网易云跟帖 -->
+	<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+	<script>
+		var cloudTieConfig = {
+		  url: document.location.href, 
+		  sourceId: document.location.href,
+		  productKey: "06ed018792cc445cae5084e8fb7c09aa",
+		  target: "cloud-tie-wrapper"
+		};
+		var yunManualLoad = true;
+		Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+	</script>
+</body>
+
+</html>
